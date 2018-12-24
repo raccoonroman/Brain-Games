@@ -1,0 +1,15 @@
+.DS_Store
+.idea
+.tern-port
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+build/
+dist/
+flow-typed
+npm-debug.*
+source/css/style.css
+Thumbs.db

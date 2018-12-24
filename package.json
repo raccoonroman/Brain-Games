@@ -1,0 +1,29 @@
+{
+  "name": "ronir-brain-games",
+  "version": "0.1.0",
+  "description": "my first hexlet project - Brain Games",
+  "main": "index.js",
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "SET NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "ronir",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "cross-env": "^5.2.0"
+  },
+  "dependencies": {
+    "npm": "^6.5.0"
+  }
+}
