@@ -1,6 +1,6 @@
 {
   "name": "ronir-brain-games",
-  "version": "0.1.0",
+  "version": "0.2.2",
   "description": "my first hexlet project - Brain Games",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
@@ -10,13 +10,19 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "SET NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "build": "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raccoonroman/project-lvl1-s400.git"
   },
+  "keywords": [
+    "brain",
+    "games",
+    "game",
+    "console"
+  ],
   "author": "ronir",
   "license": "ISC",
   "bugs": {
@@ -31,7 +37,6 @@
     "cross-env": "^5.2.0"
   },
   "dependencies": {
-    "npm": "^6.5.0",
     "readline-sync": "^1.4.9"
   }
 }
