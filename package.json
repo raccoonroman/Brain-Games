@@ -14,13 +14,21 @@
     "build": "SET NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raccoonroman/project-lvl1-s400.git"
+  },
   "author": "ronir",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raccoonroman/project-lvl1-s400/issues"
+  },
+  "homepage": "https://github.com/raccoonroman/project-lvl1-s400#readme",
   "devDependencies": {
-    "@babel/cli": "^7.2.0",
-    "@babel/core": "^7.2.0",
-    "@babel/node": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "cross-env": "^5.2.0"
   },
   "dependencies": {
