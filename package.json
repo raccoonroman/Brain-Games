@@ -2,7 +2,6 @@
   "name": "ronir-brain-games",
   "version": "0.1.0",
   "description": "my first hexlet project - Brain Games",
-  "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
@@ -32,6 +31,7 @@
     "cross-env": "^5.2.0"
   },
   "dependencies": {
-    "npm": "^6.5.0"
+    "npm": "^6.5.0",
+    "readline-sync": "^1.4.9"
   }
 }
