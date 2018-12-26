@@ -9,14 +9,14 @@ export const welcome = () => {
 export const greeting = () => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}! \n`);
+  return userName;
 };
 
 
 export const isEven = () => {
   console.log('Answer "yes" if number even otherwise answer "no". \n');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}! \n`);
 
+  const userName = greeting();
   const attemptAmt = 3;
 
   for (let i = 0; i < attemptAmt; i += 1) {
@@ -26,7 +26,7 @@ export const isEven = () => {
     const currectAnswer = randomNum % 2 === 0 ? 'yes' : 'no';
 
     if (currectAnswer !== userAnswer) {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${currectAnswer}"`);
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${currectAnswer}" \nLet's try again, ${userName}!`);
       break;
     } else {
       console.log('Correct!');
