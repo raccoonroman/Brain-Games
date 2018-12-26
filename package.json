@@ -1,9 +1,10 @@
 {
   "name": "ronir-brain-games",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "my first hexlet project - Brain Games",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
