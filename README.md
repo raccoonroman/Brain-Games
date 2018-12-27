@@ -2,3 +2,4 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ed9f9ce81e7e4a174ec2/test_coverage)](https://codeclimate.com/github/raccoonroman/project-lvl1-s400/test_coverage)
 [![Build Status](https://travis-ci.org/raccoonroman/project-lvl1-s400.svg?branch=master)](https://travis-ci.org/raccoonroman/project-lvl1-s400)
 [![asciicast](https://asciinema.org/a/Ki3OYyDAIsWd0uMREr8hEXIDt.svg)](https://asciinema.org/a/Ki3OYyDAIsWd0uMREr8hEXIDt)
+[![asciicast](https://asciinema.org/a/S55oRCVAuRnFC3nm6G3Nmugyj.svg)](https://asciinema.org/a/S55oRCVAuRnFC3nm6G3Nmugyj)
