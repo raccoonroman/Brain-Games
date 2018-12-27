@@ -1,9 +1,12 @@
-import { welcome, engine } from '..';
+import { engine, getRandomInteger } from '..';
+import { cons } from 'hexlet-pairs';
 
-export default () => {
-  const isEven = number => (number % 2 === 0 ? 'yes' : 'no');
-  const gameRules = 'Answer "yes" if number even otherwise answer "no". \n';
+const gameRules = 'Answer "yes" if number even otherwise answer "no". \n';
 
-  welcome();
-  engine(gameRules, isEven);
+const getAnswerAndQuestion = () => {
+  const question = getRandomInteger(0, 100);
+  const correctAnswer = question % 2 === 0 ? 'yes' : 'no';
+  return cons(question, correctAnswer);
 };
+
+export default () => engine(gameRules, getAnswerAndQuestion);

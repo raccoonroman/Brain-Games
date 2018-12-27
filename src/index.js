@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
+import { car, cdr } from 'hexlet-pairs';
 
 const numberOfAttempts = 3;
-const getRandomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+export const getRandomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 export const welcome = () => {
   console.log('Welcome to the Brain Games! \n');
@@ -13,15 +14,18 @@ export const greeting = () => {
   return userName;
 };
 
-export const engine = (gameRules, generateCorrectAnswer) => {
+export const engine = (gameRules, generateGame) => {
+  welcome();
   console.log(gameRules);
   const userName = greeting();
 
   for (let i = 0; i < numberOfAttempts; i += 1) {
-    const question = getRandomInteger(0, 100);
+    const getAnswerAndQuestion = generateGame();
+    const question = car(getAnswerAndQuestion);
+    const correctAnswer = cdr(getAnswerAndQuestion);
+
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    const correctAnswer = generateCorrectAnswer(question);
 
     if (correctAnswer !== userAnswer) {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}"`);
