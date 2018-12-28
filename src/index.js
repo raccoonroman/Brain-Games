@@ -5,7 +5,7 @@ const numberOfAttempts = 3;
 
 export default (gameDescription, generateGame) => {
   console.log('Welcome to the Brain Games! \n');
-  console.log(gameDescription + '\n');
+  console.log(`${gameDescription}\n`);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}! \n`);
 
