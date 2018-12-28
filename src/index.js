@@ -2,22 +2,12 @@ import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
 
 const numberOfAttempts = 3;
-export const getRandomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-export const welcome = () => {
+export default (gameDescription, generateGame) => {
   console.log('Welcome to the Brain Games! \n');
-};
-
-export const greeting = () => {
+  console.log(gameDescription + '\n');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}! \n`);
-  return userName;
-};
-
-export const engine = (gameRules, generateGame) => {
-  welcome();
-  console.log(gameRules);
-  const userName = greeting();
 
   for (let i = 0; i < numberOfAttempts; i += 1) {
     const getAnswerAndQuestion = generateGame();

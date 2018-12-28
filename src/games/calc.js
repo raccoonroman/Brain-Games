@@ -1,7 +1,8 @@
-import { engine, getRandomInteger } from '..';
+import getRandomInteger from '../utils';
 import { cons } from 'hexlet-pairs';
+import engine from '..';
 
-const gameRules = 'What is the result of the expression? \n';
+const gameDescription = 'What is the result of the expression?';
 const operators = '+-*';
 
 const getAnswerAndQuestion = () => {
@@ -20,4 +21,4 @@ const getAnswerAndQuestion = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => engine(gameRules, getAnswerAndQuestion);
+export default () => engine(gameDescription, getAnswerAndQuestion);

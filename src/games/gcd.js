@@ -1,7 +1,8 @@
-import { engine, getRandomInteger } from '..';
+import getRandomInteger from '../utils';
 import { cons } from 'hexlet-pairs';
+import engine from '..';
 
-const gameRules = 'Find the greatest common divisor of given numbers. \n';
+const gameDescription = 'Find the greatest common divisor of given numbers.';
 const gcd = (a, b) => {
   if (!b) {
     return a;
@@ -17,4 +18,4 @@ const getAnswerAndQuestion = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => engine(gameRules, getAnswerAndQuestion);
+export default () => engine(gameDescription, getAnswerAndQuestion);
