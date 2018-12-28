@@ -3,3 +3,4 @@
 [![Build Status](https://travis-ci.org/raccoonroman/project-lvl1-s400.svg?branch=master)](https://travis-ci.org/raccoonroman/project-lvl1-s400)
 [![asciicast](https://asciinema.org/a/Ki3OYyDAIsWd0uMREr8hEXIDt.svg)](https://asciinema.org/a/Ki3OYyDAIsWd0uMREr8hEXIDt)
 [![asciicast](https://asciinema.org/a/S55oRCVAuRnFC3nm6G3Nmugyj.svg)](https://asciinema.org/a/S55oRCVAuRnFC3nm6G3Nmugyj)
+[![asciicast](https://asciinema.org/a/jFBZ9VGekQB5vHgx5ki5el9Da.svg)](https://asciinema.org/a/jFBZ9VGekQB5vHgx5ki5el9Da)
