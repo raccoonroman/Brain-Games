@@ -12,15 +12,13 @@ const getAnswerAndQuestion = () => {
   const question = `${leftOperand} ${operator} ${rightOperand}`;
   let correctAnswer;
   switch (operator) {
-    case '+':
-      correctAnswer = `${leftOperand + rightOperand}`;
-      break;
     case '-':
       correctAnswer = `${leftOperand - rightOperand}`;
       break;
     case '*':
       correctAnswer = `${leftOperand * rightOperand}`;
       break;
+    default: correctAnswer = `${leftOperand + rightOperand}`;
   }
   return cons(question, correctAnswer);
 };
