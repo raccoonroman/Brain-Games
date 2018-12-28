@@ -10,9 +10,9 @@ export default (gameDescription, generateGame) => {
   console.log(`Hello, ${userName}! \n`);
 
   for (let i = 0; i < numberOfAttempts; i += 1) {
-    const getAnswerAndQuestion = generateGame();
-    const question = car(getAnswerAndQuestion);
-    const correctAnswer = cdr(getAnswerAndQuestion);
+    const gamePair = generateGame();
+    const question = car(gamePair);
+    const correctAnswer = cdr(gamePair);
 
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');

@@ -11,12 +11,16 @@ const getAnswerAndQuestion = () => {
   const rightOperand = getRandomInteger(0, 100);
   const question = `${leftOperand} ${operator} ${rightOperand}`;
   let correctAnswer;
-  if (operator === '+') {
-    correctAnswer = `${leftOperand + rightOperand}`;
-  } else if (operator === '-') {
-    correctAnswer = `${leftOperand - rightOperand}`;
-  } else if (operator === '*') {
-    correctAnswer = `${leftOperand * rightOperand}`;
+  switch (operator) {
+    case '+':
+      correctAnswer = `${leftOperand + rightOperand}`;
+      break;
+    case '-':
+      correctAnswer = `${leftOperand - rightOperand}`;
+      break;
+    case '*':
+      correctAnswer = `${leftOperand * rightOperand}`;
+      break;
   }
   return cons(question, correctAnswer);
 };
