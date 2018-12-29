@@ -3,23 +3,23 @@ import { cons } from 'hexlet-pairs';
 import engine from '..';
 
 const gameDescription = 'What number is missing in the progression?';
-const progressionStart = 0;
-const progressionLength = 9;
+const progressionStart = 1;
+const progressionLength = 10;
 
 const getAnswerAndQuestion = () => {
   const startNumber = getRandomInteger(1, 20);
   const step = getRandomInteger(6, 20);
   const hiddenElementPosition = getRandomInteger(progressionStart, progressionLength);
-  let question = '';
-  let correctAnswer = '';
+  let questionWithFirstSpace = '';
   for (let i = progressionStart; i <= progressionLength; i += 1) {
     if (hiddenElementPosition === i) {
-      question += '.. ';
-      correctAnswer = `${startNumber + step * i}`;
+      questionWithFirstSpace += ' ..';
     } else {
-      question += `${startNumber + step * i} `;
+      questionWithFirstSpace += ` ${startNumber + step * i}`;
     }
   }
+  const question = questionWithFirstSpace.slice(1);
+  const correctAnswer = `${startNumber + step * hiddenElementPosition}`;
   return cons(question, correctAnswer);
 };
 
