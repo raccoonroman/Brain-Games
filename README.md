@@ -1,8 +1,13 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/ed9f9ce81e7e4a174ec2/maintainability)](https://codeclimate.com/github/raccoonroman/project-lvl1-s400/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/ed9f9ce81e7e4a174ec2/test_coverage)](https://codeclimate.com/github/raccoonroman/project-lvl1-s400/test_coverage)
-[![Build Status](https://travis-ci.org/raccoonroman/project-lvl1-s400.svg?branch=master)](https://travis-ci.org/raccoonroman/project-lvl1-s400)
-[![asciicast](https://asciinema.org/a/Ki3OYyDAIsWd0uMREr8hEXIDt.svg)](https://asciinema.org/a/Ki3OYyDAIsWd0uMREr8hEXIDt)
-[![asciicast](https://asciinema.org/a/S55oRCVAuRnFC3nm6G3Nmugyj.svg)](https://asciinema.org/a/S55oRCVAuRnFC3nm6G3Nmugyj)
-[![asciicast](https://asciinema.org/a/jFBZ9VGekQB5vHgx5ki5el9Da.svg)](https://asciinema.org/a/jFBZ9VGekQB5vHgx5ki5el9Da)
-[![asciicast](https://asciinema.org/a/NGzmXJ4QkaqqYMyhywvwCwj7u.svg)](https://asciinema.org/a/NGzmXJ4QkaqqYMyhywvwCwj7u)
-[![asciicast](https://asciinema.org/a/ZhFqbZ7d5Xobs81f02bXugQrk.svg)](https://asciinema.org/a/ZhFqbZ7d5Xobs81f02bXugQrk)
+[![Maintainability](https://api.codeclimate.com/v1/badges/b107f22707ea620d6b16/maintainability)](https://codeclimate.com/github/raccoonroman/Brain-Games/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/b107f22707ea620d6b16/test_coverage)](https://codeclimate.com/github/raccoonroman/Brain-Games/test_coverage)
+[![Build Status](https://travis-ci.org/raccoonroman/Brain-Games.svg?branch=master)](https://travis-ci.org/raccoonroman/Brain-Games)
+
+Install:
+`npm i ronir-brain-games -g`
+
+Run:
+`brain-calc`
+`brain-even`
+`brain-gcd`
+`brain-prime`
+`brain-progression`
